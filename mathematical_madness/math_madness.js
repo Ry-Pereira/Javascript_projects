@@ -22,9 +22,10 @@ function goodbyeMessage(){
 function choiceSelection(){
     let choice = 6;
     while(choice != 5){
+        printMenu();
         choice = parseInt(prompt("User Choice: "));
         choiceExecution(choice);
-        printMenu();
+        
         
     }
 }
@@ -56,11 +57,11 @@ function choiceExecution(selectedChoice){
     else if (selectedChoice == 4){
         let userLowerBound = parseInt(prompt("Lower Bound: "));
         let userhigherBound = parseInt(prompt("Lower Bound: "));
-        sumCount = eventCount(userLowerBound,userhigherBound);
+        sumCount = evenCount(userLowerBound,userhigherBound);
         console.log(`Even Count: ${sumCount}`);
         
     }
-    else{
+    else if (selectedChoice > 5){
         console.log("Please select a valid choice next time");
     }  
 }
@@ -77,21 +78,21 @@ function summation(lowerBound,UpperBound){
 
 }
 
-function prodcut(lowerBound,UpperBound){
-    let productSumCount = 0;
-    for(let index = i;index < UpperBound;i++){
+function product(lowerBound,UpperBound){
+    let productSumCount = lowerBound;
+    for(let index = lowerBound + 1;index <= UpperBound;index++){
         productSumCount *= index;
     }
-    return summationSumCount;
+    return productSumCount;
 
 
 }
 
 function oddCount(lowerBound,UpperBound){
     let oddCountSumCount = 0;
-    for(let index = i;index < UpperBound;i++){
-        if(i%2 != 0){
-            oddCountSumCount *= index;
+    for(let index = lowerBound;index <= UpperBound;index++){
+        if(index%2 != 0){
+            oddCountSumCount += index;
 
         }
     }
@@ -101,9 +102,9 @@ function oddCount(lowerBound,UpperBound){
 
 function evenCount(lowerBound,UpperBound){
     let evenCountSumCount = 0;
-    for(let index = i;index < UpperBound;i++){
-        if(i%2 == 0){
-            evenCountSumCount *= index;
+    for(let index = lowerBound;index < UpperBound;index++){
+        if(index%2 == 0){
+            evenCountSumCount += index;
 
         }
     }
@@ -114,10 +115,7 @@ function evenCount(lowerBound,UpperBound){
 function main(){
     
     welcomeMessage();
-    printMenu();
     choiceSelection();
     goodbyeMessage();
     
 }
-
-main();
