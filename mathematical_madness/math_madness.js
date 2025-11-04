@@ -1,4 +1,3 @@
-
 //Function to print menu for mathematicl madness sums
 function printMenu(){
     //Logs into console the menu and choices associated with numbering
