@@ -12,15 +12,42 @@ function printMenu(){
 
 
 function addItem(list){
-    let item = prompt("Enter the item you want to add: ");
-    list.push(item);
+    let itemToAdd = prompt("Enter the item you want to add: ");
+    list.push(itemToAdd);
+}
+
+function crossOffItem(list,index){
+    let itemCrossedOff = "";
+    for(let i = 0; i < list[index].length; i++){
+        if(i == 0 || i == list[index].length - 1){
+            itemCrossedOff += list[i];
+        }
+    }
+    list[index] = itemCrossedOff;
 }
 
 function checkOffItem(list){
+    let itemIndexToCheck = prompt("Enter the index of the item you want to check off: ");
+    if(itemIndexToCheck >= 0 && itemIndexToCheck < list.length){
+        for(let i = 0; i < list.length -1; i++){
+            if(list[i] == list[itemIndexToCheck]){
+                crossOffItem(list,itemIndexToCheck);
+            }
+        }
+
+    }
+    else{
+        console.log("Invalid index. Please try again.");
+    }
+
 }
 
 
 function printList(list){
+    console.log("Here is your shopping list: \n")
+    for(let i = 0; i < list.length -1; i++){
+        console.log(`${i+1}: ${list[i]}`);
+        }
 }
 
 function menuSelection(){
