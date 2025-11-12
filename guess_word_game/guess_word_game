@@ -1,47 +1,88 @@
 
 
 
-
+// A welcoming message for the user
 function welcomeMessage(){
     console.log("Welcome to the Guess the Word Game!");
 }
 
+//A goodbye message for the user
 function goodbyeMessage(){
     console.log("Thank you for playing! Goodbye!");
 }
 
+
+// Function to get a random word from a predefined list
 function getRandomWord(){
+    // Predefined list of words
     const words = ["javascript", "python", "java", "ruby", "swift"];
+    // Select a random word from the list
     const randomIndex = Math.floor(Math.random() * words.length);
+    // Return the selected word
     return words[randomIndex];
 }
 
-
+// Function to handle the guessing progression
 function guess_progession(){
+    // Get a random word to be guessed
     const wordGuess = getRandomWord();
+    // Initialize number of attempts
     let numberOfAttempts = 0;
+    // Prompt the user for their first guess
     let userWordGuess = prompt("Guess the word: ");
+    // Loop until the user guesses the correct word
     while(userWordGuess !== wordGuess){
+        // Check the length of the user's guess
+        let correctLetters = 0
+        // Provide feedback based on the length of the guess
         if(userWordGuess.length > wordGuess.length){
+            // User's guess is longer than the actual word
             console.log("Your guess is longer than the word.");
+            // Increment the number of attempts
             numberOfAttempts += 1;
         }
+        // Provide feedback if the user's guess is shorter than the actual word
         else if(userWordGuess.length < wordGuess.length){
             console.log("Your guess is shorter than the word.");
+            // Increment the number of attempts
             numberOfAttempts += 1;
         }
-
+        // Provide feedback if the user's guess is of the correct length
+        else if(userWordGuess.length === wordGuess.length){
+            // Check for correct letters in the correct position
+            for(let i=0; i < userWordGuess.length; i++){
+                // Compare each letter of the user's guess with the actual word
+                if(userWordGuess[i] === wordGuess[i]){
+                    // Increment the count of correct letters
+                    correctLetters += 1;
+                }
+            }
+            // Provide feedback on the number of correct letters
+            console.log(`You have ${correctLetters} letters correct.`);
+            // Increment the number of attempts
+            numberOfAttempts += 1;
+        }
+            
+        // Prompt the user for another guess
         console.log("Incorrect! Try again.");
         userWordGuess = prompt("Guess the word: ");
     }
+    // Congratulate the user on guessing the correct word
+    console.log(`Congratulations! You've guessed the word "${wordGuess}" in ${numberOfAttempts} attempts.`);
 }
 
-
+// Main function to run the game
 function main(){
+    // Call the welcome message
     welcomeMessage();
+    // Start the guessing progression
+    guess_progession();
+    // Call the goodbye message
     goodbyeMessage();
 
 }
 
 
+
+// Start the game
 main();
