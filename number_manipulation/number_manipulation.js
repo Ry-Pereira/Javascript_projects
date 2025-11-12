@@ -26,13 +26,20 @@ function reverseNumber(number){
     
 }
 
+function lastDigit(number){
+    let digit_list = [number]
+}
 function choiceSelection(){
     printMenu();
     let userChoice = parseInt(prompt("Please enter your choice (1-5): "));
+    let userNumber = 0;
     while(userChoice != 5){
         if(userChoice == 1){
+            userNumber = parseInt(prompt("Enter a number to count its digits: "));
+            let digitCount = countDigits(userNumber);
         }
         else if(userChoice == 2){
+
         }
         else if(userChoice == 3){
         }
