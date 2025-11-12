@@ -1,0 +1,47 @@
+
+
+
+
+function welcomeMessage(){
+    console.log("Welcome to the Guess the Word Game!");
+}
+
+function goodbyeMessage(){
+    console.log("Thank you for playing! Goodbye!");
+}
+
+function getRandomWord(){
+    const words = ["javascript", "python", "java", "ruby", "swift"];
+    const randomIndex = Math.floor(Math.random() * words.length);
+    return words[randomIndex];
+}
+
+
+function guess_progession(){
+    const wordGuess = getRandomWord();
+    let numberOfAttempts = 0;
+    let userWordGuess = prompt("Guess the word: ");
+    while(userWordGuess !== wordGuess){
+        if(userWordGuess.length > wordGuess.length){
+            console.log("Your guess is longer than the word.");
+            numberOfAttempts += 1;
+        }
+        else if(userWordGuess.length < wordGuess.length){
+            console.log("Your guess is shorter than the word.");
+            numberOfAttempts += 1;
+        }
+
+        console.log("Incorrect! Try again.");
+        userWordGuess = prompt("Guess the word: ");
+    }
+}
+
+
+function main(){
+    welcomeMessage();
+    goodbyeMessage();
+
+}
+
+
+main();
