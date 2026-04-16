@@ -1,4 +1,12 @@
-
+//Name: Ryan Pereira
+//Project Name: Hex to Binary
+//Description: A program that asks the user for a hex input and conver it ot binary, whhich is the output given.
+//Module Name: fizzbuzz.js
+//Module Purpose: Set up the main entry point of the program while getting user hex data input, converting it o binary, and giving back to user as output.
+//Collaborators: None
+//Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation
+//Date: 4/16/2026
+//Last Modified: 4/16/2026
 
 
 
@@ -78,6 +86,8 @@ function convert_hex_to_binary(hexInput,binaryResult,startIndex){
 
 }
 
+
+//Defining the mainFunction, the entry point into the program itself
 function mainFunction(){
     let userHexInput = prompt("Hex: ")
     let binary_value = ""
@@ -88,4 +98,5 @@ function mainFunction(){
 
 
 
+//Calling the main function, for whole program to begin.
 mainFunction()
