@@ -6,7 +6,7 @@
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation
 //Date: 4/16/2026
-//Last Modified: 4/16/2026
+//Last Modified: 4/17/2026
 
 
 
@@ -14,74 +14,74 @@
 
 
 
-function convert_hex_to_binary(hexInput,binaryResult,startIndex){
 
-    if(startIndex > hexInput.length){
-        return binaryResult
 
-    }
-    else{
 
-    
-  
 
-        switch(hexValue){
+
+
+
+function convert_hex_to_binary(hexInput){
+    hexValueLength = hexInput.length;
+    var binaryResult= "";
+    for(var index =0;index < hexValueLength; index++)
+        switch(hexInput[index]){
             case "0":
-                binary_value += "0000"
-                break
+                binaryResult += "0000 ";
+                break;
             case "1":
-                binary_value += "0001"
-                break
+                binaryResult += "0001 ";
+                break;
             case "2":
-                binary_value += "0010"
-                break
+                binaryResult += "0010 ";
+                break;
             case "3":
-                binary_value += "0011"
-                break
+                binaryResult += "0011 ";
+                break;
             case "4":
-                binary_value += "0100"
-                break
+                binaryResult += "0100 ";
+                break;
             case "5":
-                binary_value += "0101"
-                break
+                binaryResult += "0101 ";
+                break;
             case "6":
-                binary_value += "0110"
-                break
+                binaryResult += "0110 ";
+                break;
             case "7":
-                binary_value += "0111"
-                break
+                binaryResult  += "0111 ";
+                break;
             case "8":
-                binary_value += "1000"
-                break
+                binaryResult += "1000 ";
+                break;
             case "9":
-                binary_value += "1001"
-                break
+                binaryResult += "1001 ";
+                break;
             case "A":
-                binary_value += "1010"
-                break
+                binaryResult += "1010 ";
+                break;
             case "B":
-                binary_value += "1011"
-                break
+                binaryResult += "1011 ";
+                break;
             case "C":
-                binary_value += "1100"
-                break
+                binaryResult += "1100 ";
+                break;
             case "D":
-                binary_value += "1101"
-                break
+                binaryResult += "1101 ";
+                break;
             case "E":
-                binary_value += "1110"
-                break
+                binaryResult += "1110 ";
+                break;
             case "F":
-                binary_value += "1111"
-                break
-        }
-
-        convert_hex_to_binary(hexInput,binaryResult,startIndex++)
+                binaryResult += "1111 ";
+                break;
+            
+            default:
+                return "Not Valid"
+            }
+            
         
-         
-
-
-    }
+    return binaryResult;
+        
 
 
 }
@@ -89,9 +89,10 @@ function convert_hex_to_binary(hexInput,binaryResult,startIndex){
 
 //Defining the mainFunction, the entry point into the program itself
 function mainFunction(){
-    let userHexInput = prompt("Hex: ")
-    let binary_value = ""
-    convert_hex_to_binary(userHexInput,binary_value,0)
+    let userHexInput = prompt("Hex: ");
+    let binary_value = "";
+    binaryAnswer = convert_hex_to_binary(userHexInput);
+    console.log("Hex Input: " + userHexInput + " -> " + binaryAnswer);
 
 }
 
@@ -99,4 +100,4 @@ function mainFunction(){
 
 
 //Calling the main function, for whole program to begin.
-mainFunction()
+mainFunction();
