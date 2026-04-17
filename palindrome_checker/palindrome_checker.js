@@ -13,4 +13,28 @@
 
 
 
+function isPalindrome(userInput){
+    var userInputLength = userInput.length;
+    if(userInputLength <= 1){
+        return "Give a valid palindrome input";
 
+    }
+
+}
+
+
+
+
+function mainFunction(){
+    console.log("Welcome to the Palindrome Checker\n");
+    let userPalindromeInput = prompt("Input to Check for Palindrome: ");
+    isPalindromeResult = isPalindrome(userPalindromeInput);
+}
+
+
+
+
+
+
+
+mainFunction();
