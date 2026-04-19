@@ -2,7 +2,7 @@
 //Project Name: Coin Flip
 //Description: A program that asks the user to flip a cpin and get a value between 0 to idicate Tails and 1 to indicate Head, continously if told to stop by user.
 //Module Name: coin_flip.js
-//Module Purpose: Set up the main entry point of the program while getting user for input on flipping the dice, for a value between 0 for tails and 1 for head, continously until the user asks to stop.
+//Module Purpose: Set up the main entry point of the program while getting user for input on flipping the coin, for a value between 0 for tails and 1 for head, continously until the user asks to stop.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation
 //Date: 4/18/2026
