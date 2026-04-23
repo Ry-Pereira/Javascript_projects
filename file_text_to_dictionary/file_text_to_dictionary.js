@@ -7,12 +7,13 @@ function getFileData(textFileName, callback) {
             return;
         }
 
-        const words = data
-            .toLowerCase()
-            .trim()
-            .split("\n")
-            .join(" ")
-            .split(" ");
+        var words = data
+
+        .replace(/[\r\n]+/g, " ")  
+        .trim()                    
+        .replace(/\s+/g, " ")     
+        .split(" ");  
+        
 
         callback(words); 
     });
@@ -31,11 +32,16 @@ function getCountOfWords(wordsList) {
         }
     }
 
-    console.log(countDictionary);
+    console.log("Count of Words:\n");
+    for (const wordCount in countDictionary) {
+        console.log(wordCount, countDictionary[wordCount]);
+}
 }
 
 function mainFunction() {
-    getFileData("text", function(wordsExtracted) {
+    console.log("Welcome to the Text To Count Dictionary Program");
+    var textFile = prompt("Name of text file: ");
+    getFileData(textFile, function(wordsExtracted) {
         getCountOfWords(wordsExtracted);
     });
 }
