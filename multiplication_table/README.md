@@ -1,10 +1,10 @@
-# 📄 Hex to Binary Converter Program
+# 📄 Multiplication Table Program
 
 ## 📌 Overview
 
-This project is a JavaScript-based program that converts a user-provided **hexadecimal (base-16)** value into its **binary (base-2)** equivalent.
+This project is a JavaScript-based program that generates a **multiplication table** based on a user-provided number.
 
-The program prompts the user for a hex input, processes each character, and outputs the corresponding binary representation.
+The program prompts the user for a number, then displays a formatted multiplication table from **0 up to the entered value**.
 
 ---
 
@@ -12,18 +12,18 @@ The program prompts the user for a hex input, processes each character, and outp
 
 project-folder/  
 │  
-├── hex_to_binary.js   # Main program file (conversion logic + user interaction)  
-└── README.md          # Project documentation  
+├── multiplication_table.js   # Main program file (table generation + user interaction)  
+└── README.md                 # Project documentation  
 
 ---
 
 ## 🚀 Features
 
-- Accepts hexadecimal input from the user  
-- Converts each hex digit into a 4-bit binary equivalent  
-- Uses a switch statement for precise mapping  
-- Handles invalid input with an error message  
-- Displays formatted binary output in the console  
+- Accepts numeric input from the user  
+- Generates a full multiplication table from 0 to the given number  
+- Displays results in a structured row-and-column format  
+- Includes input validation for whole numbers  
+- Outputs results directly to the console  
 
 ---
 
@@ -38,36 +38,40 @@ project-folder/
 
 The program works by:
 
-1. Prompting the user to enter a hexadecimal value  
+1. Displaying a welcome message  
 
-2. Looping through each character in the input  
+2. Prompting the user to enter a number  
 
-3. Converting each hex digit using a `switch` statement:
-   - `0–9` and `A–F` are mapped to their 4-bit binary equivalents  
+3. Checking if the input is a valid integer  
 
-4. Building a binary string with spaces between each 4-bit segment  
+4. Creating a header row for the table  
 
-5. Returning:
-   - The full binary result if input is valid  
-   - `"Not Valid"` if an invalid character is detected  
+5. Using nested loops to:
+   - Iterate through rows and columns  
+   - Calculate multiplication values  
 
-6. Displaying the result in the format:
+6. Printing each row of the multiplication table  
+
+7. Displaying an error message if the input is invalid  
+
+8. Ending the program with a completion message  
+
 ---
-
-
 
 ## ▶️ How to Run the Project
 
 1. Ensure JavaScript is supported in your environment (browser or Node.js with prompt support)
 
-2. Run the program: bash node hex_to_binary.js
+2. Run the program:
+
+bash node multiplication_table.js
 
 ---
 
 ## 📅 Project Info
 Author: Ryan Pereira
-Created: 4/16/2026
-Last Modified: 4/17/2026
+Created: 4/24/2026
+Last Modified: 4/24/2026
 
 ---
 
