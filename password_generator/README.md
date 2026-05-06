@@ -1,10 +1,10 @@
-# 📄 Hex to Binary Converter Program
+# 📄 Password Generator Program
 
 ## 📌 Overview
 
-This project is a JavaScript-based program that converts a user-provided **hexadecimal (base-16)** value into its **binary (base-2)** equivalent.
+This project is a JavaScript-based program that generates a **custom password** based on user-defined criteria.
 
-The program prompts the user for a hex input, processes each character, and outputs the corresponding binary representation.
+The program asks the user how many **uppercase letters, lowercase letters, numbers, and symbols** they want, then randomly generates a password using those specifications.
 
 ---
 
@@ -12,18 +12,18 @@ The program prompts the user for a hex input, processes each character, and outp
 
 project-folder/  
 │  
-├── hex_to_binary.js   # Main program file (conversion logic + user interaction)  
-└── README.md          # Project documentation  
+├── password_generator.js   # Main program file (logic + user interaction)  
+└── README.md              # Project documentation  
 
 ---
 
 ## 🚀 Features
 
-- Accepts hexadecimal input from the user  
-- Converts each hex digit into a 4-bit binary equivalent  
-- Uses a switch statement for precise mapping  
-- Handles invalid input with an error message  
-- Displays formatted binary output in the console  
+- Accepts user input for password composition  
+- Generates random uppercase letters, lowercase letters, numbers, and symbols  
+- Allows full customization of password structure  
+- Validates user input to ensure correct values  
+- Outputs the generated password in the console  
 
 ---
 
@@ -38,36 +38,45 @@ project-folder/
 
 The program works by:
 
-1. Prompting the user to enter a hexadecimal value  
+1. Displaying a welcome message  
 
-2. Looping through each character in the input  
+2. Prompting the user to input:
+   - Number of uppercase letters  
+   - Number of lowercase letters  
+   - Number of numbers  
+   - Number of symbols  
 
-3. Converting each hex digit using a `switch` statement:
-   - `0–9` and `A–F` are mapped to their 4-bit binary equivalents  
+3. Validating each input:
+   - Must be a positive integer  
+   - Re-prompts if invalid  
 
-4. Building a binary string with spaces between each 4-bit segment  
+4. Generating random characters from predefined lists:
+   - Uppercase letters (A–Z)  
+   - Lowercase letters (a–z)  
+   - Numbers (0–9)  
+   - Symbols (special characters)  
 
-5. Returning:
-   - The full binary result if input is valid  
-   - `"Not Valid"` if an invalid character is detected  
+5. Combining all generated characters into a single password string  
 
-6. Displaying the result in the format:
+6. Displaying the generated password  
+
+7. Ending the program  
+
 ---
-
-
 
 ## ▶️ How to Run the Project
 
 1. Ensure JavaScript is supported in your environment (browser or Node.js with prompt support)
 
-2. Run the program: bash node hex_to_binary.js
+2. Run the program:
 
+bash node password_generator.js
 ---
 
 ## 📅 Project Info
 Author: Ryan Pereira
-Created: 4/16/2026
-Last Modified: 4/17/2026
+Created: 4/19/2026
+Last Modified: 4/19/2026
 
 ---
 
