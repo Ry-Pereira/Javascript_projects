@@ -12,36 +12,55 @@
 
 
 
-
+// Function to display the main menu.
 function displayMenu() {
-    console.log("Welcome to the Tic Tac Toe game!");
+    //Logs into the console the options for the user to select from.
     console.log("Please select an option:");
+    //Logs into the console, for the user to select 1, to start a new game.
     console.log("1. Start a new game");
+    //Logs into the console, for the user to select 2, to exit the game.
     console.log("2. Exit");
 }
 
-function playGame(){
+function playGame(firstPlayer, secondPlayer) {
+    console.log(`Starting a new game between ${firstPlayer} (X) and ${secondPlayer} (O).`);
+    let gameWinner = "Tie";
+    
+    
 
 }
 
 
+
+// Main function to start the program.
 function main(){
+    //Logs into the console a welcome message for the user.
     console.log("Welcome to the Tic Tac Toe game!");
+    //Calling the displayMenu function to show the user the available options.
     displayMenu();
+    //Prompting the user to enter their choice and storing it in the variable userChoice.
     let userChoice = parseInt(prompt("Enter your choice (1 or 2): "));
+    //Checking the user's choice and executing the corresponding action.
     if(userChoice === 1){
+        //Letting player 1 and player 2 enter their names and storing them in the variables player1 and player2 respectively.
         let player1 = prompt("Enter name for Player 1 (X): ");
         let player2 = prompt("Enter name for Player 2 (O): ");
+        //Calling the playGame function to start the game with the provided player names.
+        playGame(player1, player2);
     }
 
-
-
-
-
-
-
-    console.log("Thankyou for playing the tic tac toe game!\nGoodbye....");
+    else if(userChoice === 2){
+        //Logs into the console a goodbye message for the user when they choose to exit the game.
+        console.log("Thankyou for playing the tic tac toe game!\nGoodbye....");
+    }
+    else{
+        //Logs into the console an error message for the user when they enter an invalid choice.
+        console.log("Invalid choice. Please select 1 or 2.");
+    }
+  
 }
 
 
+
+// Calling the main function to start the program.
 main();
