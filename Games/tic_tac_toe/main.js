@@ -9,7 +9,7 @@
 // Last Modified: 5/18/2026
 
 
-
+import { TicTacToeBoard } from './tic_tac_toe_board_class.js';
 
 
 // Function to display the main menu.
