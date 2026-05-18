@@ -18,3 +18,11 @@ export class TicTacToeBoard {
             [' ', ' ', ' ']
         ];
     }
+
+    displayBoard() {
+        console.log("Current Board:");
+        for (let row of this.board) {
+            console.log(row.join('|'));
+        }
+    }
+}
