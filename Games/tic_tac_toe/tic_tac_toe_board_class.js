@@ -17,6 +17,55 @@ export class TicTacToeBoard {
             [' ', ' ', ' '],
             [' ', ' ', ' ']
         ];
+        
+    }
+    markCell(row, col, player) {
+        if (this.board[row][col] === ' ') {
+            this.board[row][col] = player;
+            return true;
+        }
+        return false;
+    }
+    checkMarkedOutBoard() {
+        for (let row of this.board) {
+            for (let cell of row) {
+                if (cell === ' ') {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    checkWinner() {
+        if(this.board[0][0] !== ' ' && this.board[0][0] === this.board[0][1] && this.board[0][1] === this.board[0][2]) {
+            return this.board[0][0];
+        }
+        if(this.board[1][0] !== ' ' && this.board[1][0] === this.board[1][1] && this.board[1][1] === this.board[1][2]) {
+            return this.board[1][0];
+        }
+        if(this.board[2][0] !== ' ' && this.board[2][0] === this.board[2][1] && this.board[2][1] === this.board[2][2]) {
+            return this.board[2][0];
+        }
+
+        if(this.board[0][0] !== ' ' && this.board[0][0] === this.board[1][0] && this.board[1][0] === this.board[2][0]) {
+            return this.board[0][0];
+        }
+
+        if(this.board[0][1] !== ' ' && this.board[0][1] === this.board[1][1] && this.board[1][1] === this.board[2][1]) {
+            return this.board[0][1];
+        }
+        if(this.board[0][2] !== ' ' && this.board[0][2] === this.board[1][2] && this.board[1][2] === this.board[2][2]) {
+            return this.board[0][2];
+        }
+
+        if(this.board[0][0] !== ' ' && this.board[0][0] === this.board[1][1] && this.board[1][1] === this.board[2][2]) {
+            return this.board[0][0];
+        }
+        
+        if(this.board[0][2] !== ' ' && this.board[0][2] === this.board[1][1] && this.board[1][1] === this.board[2][0]) {
+            return this.board[0][2];
+        }
+        return null;
     }
 
     displayBoard() {
@@ -25,4 +74,6 @@ export class TicTacToeBoard {
             console.log(row.join('|'));
         }
     }
+
+
 }
