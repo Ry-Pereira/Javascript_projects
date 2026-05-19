@@ -24,9 +24,27 @@ function displayMenu() {
 
 function playGame(firstPlayer, secondPlayer) {
     console.log(`Starting a new game between ${firstPlayer} (X) and ${secondPlayer} (O).`);
-    let gameWinner = "Tie";
-    
-    
+    let board = new TicTacToeBoard();
+    board.displayBoard();
+    while (true) {
+        if(board.checkMarkedOutBoard()){
+            console.log("The board is full. The game is a draw!");
+            break;
+        }
+        let row = parseInt(prompt(`${firstPlayer}, enter the row (0-2) for your move: `));
+        let col = parseInt(prompt(`${firstPlayer}, enter the column (0-2) for your move: `));
+        board.markCell(row, col, 'X');
+        board.displayBoard();
+        let row = parseInt(prompt(`${secondPlayer}, enter the row (0-2) for your move: `));
+        let col = parseInt(prompt(`${secondPlayer}, enter the column (0-2) for your move: `));
+        board.markCell(row, col, 'O');
+        board.displayBoard();
+        let winner = board.checkWinner();
+        if (winner) {
+            console.log(`Congratulations ${winner === 'X' ? firstPlayer : secondPlayer}! You have won the game.`);
+            break;
+        }
+
 
 }
 
