@@ -29,9 +29,19 @@ function playGame(){
     let targetNumber = Math.floor(Math.random() * 100) + 1;
     let guess = getUserChoice();
     while(guess !== targetNumber){
+        if (isNaN(guess)) {
+        console.log("Please enter a valid number.");
+        }
         if(guess < targetNumber){
             console.log("Too low!");
-        } else {
+        }
+        else if(guess < 0){
+            console.log("Please enter a number between 1 and 100.");
+        }
+        else if(guess > 100){
+            console.log("Please enter a number between 1 and 100.");
+        }
+        else {
             console.log("Too high!");
         }
         guess = getUserChoice();
@@ -46,7 +56,8 @@ function main(){
     while(userMenuChoice !== 2){
         if(userMenuChoice === 1){
             playGame();
-        } else {
+        } 
+        else {
             console.log("Invalid choice. Please try again.");
         }
         displayMenu();
@@ -60,3 +71,4 @@ function main(){
 
 
 main();
+
