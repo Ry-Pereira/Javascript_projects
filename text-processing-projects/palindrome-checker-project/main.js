@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Palindrome Checker
 //Description: A program that asks the user for a input, assumed as string. Return a string indicating that its a palindrome, in that the word is the same if reversed.
-//Module Name: palindrome_checker.js
+//Module Name: main.js
 //Module Purpose: Set up the main entry point of the program while getting user input to see if reversed is a palindrome or not.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

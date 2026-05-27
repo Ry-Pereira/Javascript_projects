@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Anagram Checker
 //Description: A program that prompts the user for two strings and determines whether they are anagrams of each other.
-//Module Name: anagram_checker.js
+//Module Name: main.js
 //Module Purpose: Serves as the main entry point of the program by collecting user input and using a function to determine whether the two provided strings are anagrams.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

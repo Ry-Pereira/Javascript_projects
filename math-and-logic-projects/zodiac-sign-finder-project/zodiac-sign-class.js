@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Zodiac Sign Finder
 //Description: A program that asks the user for a birth date and determines their zodiac sign.
-//Module Name: zodiac_sign_class.js
+//Module Name: zodiac-sign-class.js
 //Module Purpose: Set up the ZodiacSign class which will be used to create objects for each zodiac sign with their respective information and traits.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

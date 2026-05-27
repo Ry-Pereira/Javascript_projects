@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Password Generator
 //Description: A program that asks the user for the amount of value from upper case letters, lower case letters, numbers, and symbols list. Gets random value and and make a password from it.
-//Module Name: password_generator.js
+//Module Name: main.js
 //Module Purpose: Set up the main entry point of the program while getting user for input on amount of random values from upper case letters, lower case letters, numbers, and symbols list. 
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

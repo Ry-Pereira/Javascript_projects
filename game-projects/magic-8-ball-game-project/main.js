@@ -11,9 +11,9 @@
 
 
 // Imports the Magic8Ball class from another file
-import { Magic8Ball } from "./magic_8_ball_class";
+import { Magic8Ball } from "./magic-8-ball-class";
 // Creates a reference to the Magic8Ball class (note: should normally be an instance)
-const magic8Ball = Magic8Ball;
+const magic8Ball = new Magic8Ball();
 
 
 // Displays the menu options to the user

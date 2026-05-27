@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Hex to Binary
 //Description: A program that asks the user for a hex input and conver it ot binary, whhich is the output given.
-//Module Name: fizzbuzz.js
+//Module Name: main.js
 //Module Purpose: Set up the main entry point of the program while getting user hex data input, converting it o binary, and giving back to user as output.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

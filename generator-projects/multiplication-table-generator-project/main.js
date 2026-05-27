@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Multiplication Table
 //Description: A program that generates a multiplication table based on a user-provided number input, displaying values from 0 up to the selected limit.
-//Module Name: multiplication_table.js
+//Module Name: main.js
 //Module Purpose: Set up the main entry point of the program while getting user input for a number and generating a multiplication table up to that value.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

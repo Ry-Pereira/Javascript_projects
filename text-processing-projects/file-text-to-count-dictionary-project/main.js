@@ -1,7 +1,7 @@
 // Name: Ryan Pereira
 // Project Name: File_Text_To_Count_Dictionary
 // Description: A program that reads a text file, processes its contents into words,and counts the frequency of each word in the file.
-// Module Name: file_text_to_count_dictionary.js
+// Module Name: main.js
 // Module Purpose: Serves as the main entry point of the program by collecting a file name from the user, reading the file contents, and generating a word count dictionary.
 // Collaborators: None
 // Sources: Github Copilot, Stack Overflow, ChatGPT, Node.js documentation

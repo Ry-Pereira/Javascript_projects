@@ -2,7 +2,7 @@
 //Name: Ryan Pereira
 //Project Name: Vowel Remover
 //Description: A program that prompts the user for a string and removes all vowels from the input, returning the modified string.
-//Module Name: vowel_remover.js
+//Module Name: main.js
 //Module Purpose: Serves as the main entry point of the program by collecting user input and processing it through functions that validate characters and remove vowels from the string.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

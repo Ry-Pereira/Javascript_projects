@@ -10,7 +10,7 @@
 
 
 // Importing the ZodiacSign class from the zodiac_sign_class.js file
-import zodiaSignsListClass from "./zodiac_signs_list_class.js";
+import zodiaSignsListClass from "./zodiac-signs-list-class.js";
 
 
 

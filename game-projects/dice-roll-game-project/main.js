@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Dice Roll
 //Description: A program that asks the user to roll a dice and get a value between 1 and 6, continously if told to stop by user.
-//Module Name: dice_roll.js
+//Module Name: main.js
 //Module Purpose: Set up the main entry point of the program while getting user for input on rolling the dice, for a value between 1 and 6, continously until the user asks to stop.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

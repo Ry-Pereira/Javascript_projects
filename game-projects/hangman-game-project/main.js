@@ -1,7 +1,7 @@
 // Name: Ryan Pereira
 // Project Name: Hangman Program
 // Description: A Hangman game where the program randomly selects a word and the user attempts to guess it one letter at a time within a limited number of lives.
-// Module Name: hangman.js
+// Module Name: main.js
 // Module Purpose: Serves as the main entry point of the program by selecting a random word, generating a blank version of it, and running the Hangman game logic.
 // Collaborators: None
 // Sources: GitHub Copilot, Stack Overflow, ChatGPT, JavaScript documentation

@@ -1,7 +1,7 @@
 // Name: Ryan Pereira
 // Project Name: Magic 8 Ball Program
 // Description: Defines the Magic 8 Ball class used to generate random responses for the Magic 8 Ball simulation.
-// Module Name: magic_8_ball_class.js
+// Module Name: magic-8-ball-class.js
 // Module Purpose: Provides the Magic8Ball class, which stores possible responses and returns a random answer when shaken.
 // Collaborators: None
 // Sources: Github Copilot, Stack Overflow, ChatGPT, JavaScript documentation

@@ -1,7 +1,7 @@
 //Name: Ryan Pereira
 //Project Name: Fizzbuzz
 //Description: A program that asks the user for a start and end number. Generate a sequence of that range, and determine wheter the number fits the qualifications of Fizz,Buzz, or FizzBuzz.
-//Module Name: fizzbuzz.js
+//Module Name: main.js
 //Module Purpose: Set up the main entry point of the program while getting user data and deciding whether the number sequence is Fizz if divisible by 3, Buzz if divisble by 5, and Fizzbuzz if divisble by 3 and 5.
 //Collaborators: None
 //Sources: Github Copilot, Stack Overflow, ChatGPT, Python documentation

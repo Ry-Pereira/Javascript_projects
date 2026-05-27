@@ -1,6 +1,6 @@
 //Name: Ryan Pereira
 //Project Name: Rock Paper Scissors
-//Description: fegerlfec code
+//Description: This program allows the user to play a game of Rock Paper Scissors against the computer. The user will be prompted to enter their move, and the computer will randomly select a move. The program will determine the winner of each round and keep track of the scores. After three rounds, the program will declare the overall winner of the game.
 //Module Name: main.js
 //Module Purpose: Serves as the main entry point of the program by collecting user input and using a function to determine whether the two provided strings are anagrams.
 //Collaborators: None

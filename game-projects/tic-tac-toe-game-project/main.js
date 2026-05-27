@@ -10,7 +10,7 @@
 
 
 // Importing the TicTacToeBoard class from the separate module file.
-import { TicTacToeBoard } from './tic_tac_toe_board_class.js';
+import { TicTacToeBoard } from './tic-tac-toe-board-class.js';
 
 
 // Function to display the main menu.
